@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chrispy Critter | YouTube Creator</title>
+  <title>Chrispy_Critter | YouTube Creator</title>
 
   <link rel="stylesheet" href="styles.css" />
   <script defer src="app.js"></script>
@@ -12,50 +12,72 @@
 <body>
 
   <nav class="navbar">
-    <a href="index.html" class="logo">Chrispy<span>Critter</span></a>
+    <a href="#home" class="logo">Chrispy<span>Critter</span></a>
 
-    <button class="menu-toggle" id="menuToggle">☰</button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+      ☰
+    </button>
 
     <ul class="nav-links" id="navLinks">
       <li><a href="#home">Home</a></li>
       <li><a href="#videos">Videos</a></li>
+      <li><a href="#vibes">Vibes</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#connect">Connect</a></li>
     </ul>
   </nav>
 
   <header class="hero" id="home">
-    <div class="hero-content reveal">
-      <p class="eyebrow">YouTube Creator</p>
-      <h1>Welcome to <span>Chrispy Critter</span></h1>
-      <p>
-        Entertaining, creative, and fun content made for viewers who enjoy personality,
-        energy, and original videos.
-      </p>
 
-      <div class="hero-buttons">
-        <a href="https://www.youtube.com/@chrispy_critter7593" target="_blank" class="btn primary">
-          Subscribe on YouTube
-        </a>
-        <a href="#videos" class="btn secondary">Watch Videos</a>
+    <div class="banner reveal">
+      <div class="banner-text">
+        <h2>Chrispy Critter</h2>
+        <p>Gaming • Art • Cats • Chaos</p>
       </div>
     </div>
+
+    <div class="profile-wrapper reveal">
+      <div class="profile-pic"></div>
+
+      <div class="hero-info">
+        <h1>Chrispy_Critter</h1>
+
+        <p class="channel-meta">
+          @chrispy_critter7593 • 13 videos • YouTube creator
+        </p>
+
+        <p class="hero-description">
+          Nintendo games, horror vibes, cozy chaos, drawings, cats,
+          and internet randomness all in one place.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="https://www.youtube.com/@chrispy_critter7593" target="_blank" class="btn primary">
+            Subscribe
+          </a>
+
+          <a href="#videos" class="btn secondary">
+            Watch Videos
+          </a>
+        </div>
+      </div>
+    </div>
+
   </header>
 
-  <section class="section stats reveal">
-    <div class="stat-card">
-      <h3>Fresh</h3>
-      <p>Creative uploads</p>
+  <section class="creator-bar reveal">
+    <div class="creator-stat">
+      <h3>13</h3>
+      <p>Videos</p>
     </div>
 
-    <div class="stat-card">
-      <h3>Fun</h3>
-      <p>Entertaining content</p>
+    <div class="creator-stat">
+      <h3>Games</h3>
+      <p>Nintendo + Horror</p>
     </div>
 
-    <div class="stat-card">
-      <h3>Growing</h3>
-      <p>Community focused</p>
+    <div class="creator-stat">
+      <h3>Creative</h3>
+      <p>Art + Chaos</p>
     </div>
   </section>
 
@@ -63,49 +85,78 @@
     <div class="section-title reveal">
       <p class="eyebrow">Featured Content</p>
       <h2>Latest Videos</h2>
-      <p>Watch highlights, featured uploads, and new content from the channel.</p>
+      <p>Watch featured uploads, gaming moments, and creator highlights.</p>
     </div>
 
     <div class="video-grid">
       <div class="video-card reveal">
-        <div class="video-placeholder">▶</div>
-        <h3>Featured Video</h3>
-        <p>Add your favorite YouTube video here.</p>
+        <div class="video-thumb">▶</div>
+        <div class="video-info">
+          <h3>Featured Upload</h3>
+          <p>Add a YouTube video, thumbnail, or embed here.</p>
+        </div>
       </div>
 
       <div class="video-card reveal">
-        <div class="video-placeholder">▶</div>
-        <h3>Popular Upload</h3>
-        <p>Showcase one of the best performing videos.</p>
+        <div class="video-thumb pink">▶</div>
+        <div class="video-info">
+          <h3>Popular Video</h3>
+          <p>Showcase one of the best or funniest uploads.</p>
+        </div>
       </div>
 
       <div class="video-card reveal">
-        <div class="video-placeholder">▶</div>
-        <h3>Newest Upload</h3>
-        <p>Keep fans updated with the newest video.</p>
+        <div class="video-thumb blue">▶</div>
+        <div class="video-info">
+          <h3>Newest Upload</h3>
+          <p>Keep the page updated with the latest video.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section vibes" id="vibes">
+    <div class="section-title reveal">
+      <p class="eyebrow">The Vibe</p>
+      <h2>Cute, chaotic, and gamer-coded</h2>
+    </div>
+
+    <div class="vibe-grid">
+      <div class="vibe-card reveal">
+        <h3>🎮 Gaming</h3>
+        <p>Nintendo energy, cozy gameplay, and fun creator moments.</p>
+      </div>
+
+      <div class="vibe-card reveal">
+        <h3>👻 Horror</h3>
+        <p>A little creepy, a little chaotic, and very entertaining.</p>
+      </div>
+
+      <div class="vibe-card reveal">
+        <h3>🎨 Art</h3>
+        <p>Drawings, characters, creativity, and colorful personality.</p>
+      </div>
+
+      <div class="vibe-card reveal">
+        <h3>🐾 Cats</h3>
+        <p>Kitty moments and soft chaos mixed into the channel.</p>
       </div>
     </div>
   </section>
 
   <section class="section about" id="about">
-    <div class="about-box reveal">
+    <div class="about-card reveal">
       <p class="eyebrow">About</p>
-      <h2>About Chrispy Critter</h2>
-      <p>
-        Chrispy Critter is a creator building a fun and energetic YouTube channel.
-        This website is a home base for videos, updates, and ways for viewers to connect.
-      </p>
-    </div>
-  </section>
+      <h2>Meet Chrispy Critter</h2>
 
-  <section class="section connect" id="connect">
-    <div class="reveal">
-      <p class="eyebrow">Stay Connected</p>
-      <h2>Follow the Channel</h2>
-      <p>Support the creator by subscribing and checking out new uploads.</p>
+      <p>
+        Chrispy Critter is a creative YouTube creator with a love for games,
+        drawing, cats, and fun internet randomness. This site is a home base for
+        videos, updates, and everything connected to the channel.
+      </p>
 
       <a href="https://www.youtube.com/@chrispy_critter7593" target="_blank" class="btn primary">
-        Go to YouTube
+        Visit YouTube Channel
       </a>
     </div>
   </section>
